@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
@@ -102,30 +103,57 @@ main {
     width: 85%;
 }
 
+
+
+
 @media only screen and (min-width: 501px) {
 body {
     padding-bottom: 0;
+    height: 100%;
 }
+
 main {
     width: 60%;
     height: auto;
-    margin: 8rem auto;
-    padding: 3.5rem 6rem 5rem 2rem;
+    margin: 0rem auto 0;
+    padding: 75px 60px 55px 0;
     display: flex;
     justify-content: flex-end;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 600px auto;
+    background-position: -55% 50%;
 }
+    
 #main-content {
    flex-basis: 50%;
    display: flex;
    flex-direction: column;
 }
+    
 #illustration-mobile {
     display: none;
 }
+    
 #illustration-desktop {
     display: block;
 }
+    
+#box-desktop{
+    width: 10%;
+    position: fixed;
+    top:46%;
+    left: 15.5%;
+    z-index: 3;
+    display: block; 
+}
+
 #woman-desktop {
     position: absolute;
     width: 45%;
@@ -133,21 +161,23 @@ main {
     left: -7.5%;
     transform: translate(0, -50%);
 }
-#box-desktop{
-    width: 12.5%;
-    position: absolute;
-    top:40%;
-    left: 14%;
-    z-index: 1;
-    display: block;
     
-}
+#shadow-div {
+    position: relative;  
+    top: 0;
+    left: 0;
+   /* transform: translate(-55%, -25%);*/
+    z-index: -1;
+}   
+    
 #shadow-desktop {
-    width: 90%;
     position: absolute;
-    top: -45%;
-    left: -55%;
+    width: 35rem;
+    top: 90%;
+    left: 0%;
+   /* transform: translate(-55%, -25%);*/
 }
+    
 #faq{
     font-size: 2rem;
     text-align: left;
