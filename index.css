@@ -20,7 +20,7 @@ body {
 }
 main {
     width: 85%;
-    height: 40rem;
+    height: 43rem;
     margin: 12rem auto 0;
     background-color: #FFF;
     border-radius: 1rem;
@@ -29,13 +29,13 @@ main {
 }
 #illustration {
     position: absolute;
-    width: 20rem;
+    width: 80%;
     top: 0;
     left: 50%;
     transform: translate(-50%, -60%);
 }
 #shadow {
-    width: 20rem;
+    width: 80%;
     position: absolute;
     top: 0;
     left: 50%;
@@ -47,4 +47,17 @@ main {
 }
 #qa {
     margin-top: 2rem;
+}
+.qa-block {
+    margin-bottom: 1rem;
+}
+.question  {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+.answer {
+    font-size: 0.8rem;
+    color: var(--dgb);
+    /*visibility: hidden;*/
+    line-height: 1.4;
 }
