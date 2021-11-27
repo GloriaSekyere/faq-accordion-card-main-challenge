@@ -26,13 +26,13 @@
       <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
-            <p class="question">How many team members can I invite?</p>
-            <span class="arrow">
-              <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+            <p id="q1" class="question">How many team members can I invite?</p>
+            <span  class="arrow">
+              <img id="arrow-1" src="images/icon-arrow-down.svg" alt="" aria-hidden="true" onclick="arrow1()">
             </span>
           </div>
           <!-- Answer -->
-          <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+          <p id="a1" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
   team members for the Premium plan.</p>
         </div>
   
@@ -90,7 +90,48 @@
   </main>
 
   <script>
-    
+     /* function showAnswer() {
+          
+          switch() {
+            case 1:
+                num = 1;
+                break;
+            case 2:
+                num = 2;
+                break;
+            case 3:
+                num = 3;
+                break;
+            case 4:
+                num = 4;
+                break;
+            case 5:
+                num = 5;
+                break;
+            default:
+                num = null;
+                 }*/
+          function arrow1() {
+          
+          let question = document.getElementById("q1").style;
+          
+          let answer = document.getElementById("a1").style;
+          
+          let arrow = document.getElementById('arrow-1').style;
+          
+          if (answer.display == 'block') {
+              question.fontWeight = 400;
+              answer.display = 'none';
+              arrow.transform  = 'rotate(0deg)';
+          }
+          else {
+              question.fontWeight = 700;
+              answer.display = 'block';
+              arrow.transform  = 'rotate(180deg)';
+          }   
+      }
+          
+     // }
       
       
       

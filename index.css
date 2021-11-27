@@ -20,12 +20,13 @@ body {
 }
 main {
     width: 85%;
-    height: 43rem;
+    height: auto;
     margin: 12rem auto 0;
     background-color: #FFF;
     border-radius: 1rem;
     position: relative;
-    padding: 10.5rem 3rem 0;
+    padding: 10.5rem 2rem 3rem;
+    transition: all 3s;
 }
 #illustration {
     position: absolute;
@@ -55,6 +56,7 @@ main {
 .question-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .question  {
     font-size: 0.9rem;
@@ -62,12 +64,16 @@ main {
     color: var(--vdgb);
 }
 .arrow {
-    
+    transition: all 5s;
+}
+.arrow img {
+
 }
 .answer {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--dgb);
     /*visibility: hidden;*/
     line-height: 1.4;
     display: none;
+    width: 85%;
 }
