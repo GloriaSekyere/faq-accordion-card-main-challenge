@@ -39,50 +39,50 @@
       <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
-            <p class="question">What is the maximum file upload size?</p>
+            <p id="q2" class="question">What is the maximum file upload size?</p>
             <span class="arrow">
-              <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <img id="arrow-2" src="images/icon-arrow-down.svg" alt="" aria-hidden="true"onclick="arrow2()">
             </span>
           </div>
         <!-- Answer -->
-          <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          <p id="a2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
 
       <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
-            <p class="question">How do I reset my password?</p>
+            <p id="q3" class="question">How do I reset my password?</p>
             <span class="arrow">
-              <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <img id="arrow-3" src="images/icon-arrow-down.svg" alt="" aria-hidden="true" onclick="arrow3()">
             </span>
           </div>
           <!-- Answer -->
-          <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+          <p id="a3" class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
   A reset link will be emailed to you.</p>
         </div>
 
       <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
-            <p class="question">Can I cancel my subscription?</p>
+            <p id="q4" class="question">Can I cancel my subscription?</p>
             <span class="arrow">
-              <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <img id="arrow-4" src="images/icon-arrow-down.svg" alt="" aria-hidden="true" onclick="arrow4()">
             </span>
           </div>
           <!-- Answer -->
-          <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          <p id="a4" class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
         </div>
 
       <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
-            <p class="question">Do you provide additional support?</p>
+            <p id="q5" class="question">Do you provide additional support?</p>
             <span class="arrow">
-              <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <img id="arrow-5" src="images/icon-arrow-down.svg" alt="" aria-hidden="true" onclick="arrow5()">
             </span>
           </div>
           <!-- Answer -->
-          <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          <p id="a5" class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </div>
           
     </div>
@@ -90,27 +90,7 @@
   </main>
 
   <script>
-     /* function showAnswer() {
-          
-          switch() {
-            case 1:
-                num = 1;
-                break;
-            case 2:
-                num = 2;
-                break;
-            case 3:
-                num = 3;
-                break;
-            case 4:
-                num = 4;
-                break;
-            case 5:
-                num = 5;
-                break;
-            default:
-                num = null;
-                 }*/
+     
           function arrow1() {
           
           let question = document.getElementById("q1").style;
@@ -130,8 +110,87 @@
               arrow.transform  = 'rotate(180deg)';
           }   
       }
+      
+      function arrow2() {
           
-     // }
+          let question = document.getElementById("q2").style;
+          
+          let answer = document.getElementById("a2").style;
+          
+          let arrow = document.getElementById('arrow-2').style;
+          
+          if (answer.display == 'block') {
+              question.fontWeight = 400;
+              answer.display = 'none';
+              arrow.transform  = 'rotate(0deg)';
+          }
+          else {
+              question.fontWeight = 700;
+              answer.display = 'block';
+              arrow.transform  = 'rotate(180deg)';
+          }   
+      }
+      
+      function arrow3() {
+          
+          let question = document.getElementById("q3").style;
+          
+          let answer = document.getElementById("a3").style;
+          
+          let arrow = document.getElementById('arrow-3').style;
+          
+          if (answer.display == 'block') {
+              question.fontWeight = 400;
+              answer.display = 'none';
+              arrow.transform  = 'rotate(0deg)';
+          }
+          else {
+              question.fontWeight = 700;
+              answer.display = 'block';
+              arrow.transform  = 'rotate(180deg)';
+          }   
+      }
+      
+      function arrow4() {
+          
+          let question = document.getElementById("q4").style;
+          
+          let answer = document.getElementById("a4").style;
+          
+          let arrow = document.getElementById('arrow-4').style;
+          
+          if (answer.display == 'block') {
+              question.fontWeight = 400;
+              answer.display = 'none';
+              arrow.transform  = 'rotate(0deg)';
+          }
+          else {
+              question.fontWeight = 700;
+              answer.display = 'block';
+              arrow.transform  = 'rotate(180deg)';
+          }   
+      }
+      
+      function arrow5() {
+          
+          let question = document.getElementById("q5").style;
+          
+          let answer = document.getElementById("a5").style;
+          
+          let arrow = document.getElementById('arrow-5').style;
+          
+          if (answer.display == 'block') {
+              question.fontWeight = 400;
+              answer.display = 'none';
+              arrow.transform  = 'rotate(0deg)';
+          }
+          else {
+              question.fontWeight = 700;
+              answer.display = 'block';
+              arrow.transform  = 'rotate(180deg)';
+          }   
+      }
+          
       
       
       
