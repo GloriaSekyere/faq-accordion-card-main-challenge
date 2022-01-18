@@ -14,16 +14,23 @@
 <body>
   <main>
     <div id="bg"></div> 
-    <div id="illustrations">
+    <div id="illustration-mobile">
       <img id="illustration" src="images/illustration-woman-online-mobile.svg" alt="" aria-hidden="true">
       <img id="shadow" src="images/bg-pattern-mobile.svg">
     </div>
+      
+    <div id="illustration-desktop">
+      <img id="box" src="images/illustration-box-desktop.svg" alt="" aria-hidden="true">
+      <img id="illustration" src="images/illustration-woman-online-desktop.svg" alt="" aria-hidden="true">
+      <img id="shadow" src="images/bg-pattern-mobile.svg">
+    </div>
+      
+    <div id="main-content">    
+      <h1 id="faq">FAQ</h1>
         
-    <h1 id="faq">FAQ</h1>
-        
-    <div id="qa">
+      <div id="qa">
           
-      <div class="qa-block">
+        <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
             <p id="q1" class="question" onclick="arrow1()">
@@ -38,7 +45,7 @@
   team members for the Premium plan.</p>
         </div>
   
-      <div class="qa-block">
+        <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
             <p id="q2" class="question" onclick="arrow2()">
@@ -52,7 +59,7 @@
           <p id="a2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
 
-      <div class="qa-block">
+        <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
             <p id="q3" class="question" onclick="arrow3()">
@@ -67,7 +74,7 @@
   A reset link will be emailed to you.</p>
         </div>
 
-      <div class="qa-block">
+        <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
             <p id="q4" class="question" onclick="arrow4()">
@@ -81,7 +88,7 @@
           <p id="a4" class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
         </div>
 
-      <div class="qa-block">
+        <div class="qa-block">
           <div class="question-block">
           <!-- Question -->
             <p id="q5" class="question" onclick="arrow5()">
@@ -95,8 +102,8 @@
           <p id="a5" class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </div>
           
+      </div>
     </div>
-
   </main>
 
   <script src="index.js"></script>
