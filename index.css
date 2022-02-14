@@ -78,7 +78,7 @@ main {
 .question-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .question  {
     font-size: 0.9rem;
