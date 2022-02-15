@@ -1,7 +1,7 @@
 let qaBlocks = document.querySelectorAll(".qa-block");
 
 qaBlocks.forEach(qaBlock => {
-  let questionBlock = qaBlock.children[0];
+  let questionBlock = qaBlock;
   let question = qaBlock.children[0].children[0];
   let arrow = qaBlock.children[0].children[1].children[0];
   let answer = qaBlock.children[1];
