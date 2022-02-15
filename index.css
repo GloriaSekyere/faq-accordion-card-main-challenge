@@ -8,6 +8,7 @@
     --lgb: hsl(240, 5%, 91%);
     --shadow: #5C48C2;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,9 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     padding-bottom: 4rem;
     position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-content: center center;
 }
 #bg {
     background-image: linear-gradient(to bottom, var(--sv), var(--sb));
@@ -34,14 +38,13 @@ body {
     z-index: -1;
 }
 main {
-    width: 85%;
+    width: 100%;
     height: auto;
     margin: 12rem auto 0;
     background-color: #FFF;
     border-radius: 1rem;
     position: relative;
-    padding: 10.5rem 2rem 3rem;
-    transition: all 3s;
+    padding: 8.5rem 2rem 3rem;
     box-shadow: 0px 2rem 5rem var(--shadow);
 }
 #woman {
@@ -69,7 +72,7 @@ main {
     font-size: 2rem;
 }
 #qa {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 .qa-block {
     padding: 1rem 0;
@@ -78,23 +81,14 @@ main {
 .question-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .question  {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     color: var(--vdgb);
-    cursor: pointer; 
 }
-.question:hover {
-    color: var(--sr);
-}
-.arrow {
-    transition: all 5s;
-}
-.arrow img {
-    cursor: pointer;
-}
+
 .answer {
     font-size: 0.85rem;
     color: var(--dgb);
@@ -106,28 +100,23 @@ main {
 
 
 
-@media only screen and (min-width: 501px) {
+@media screen and (min-width: 1280px) {
 body {
     padding-bottom: 0;
-    height: 100%;
 }
 
 main {
-    width: 60%;
+    width: 900px;
     height: auto;
     margin: 0rem auto 0;
     padding: 75px 60px 55px 0;
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: 600px auto;
+    background-size: 50px auto;
     background-position: -55% 50%;
 }
     
@@ -146,40 +135,38 @@ main {
 }
     
 #box-desktop{
-    width: 10%;
+    width: 175px;
     position: fixed;
-    top:46%;
-    left: 15.5%;
+    top: 370px;
+    left: 190px;
     z-index: 3;
     display: block; 
 }
 
 #woman-desktop {
     position: absolute;
-    width: 45%;
+    width: 400px;
     top: 50%;
-    left: -7.5%;
+    left: -50px;
     transform: translate(0, -50%);
 }
-    
-#shadow-div {
-    position: relative;  
-    top: 0;
-    left: 0;
-   /* transform: translate(-55%, -25%);*/
-    z-index: -1;
-}   
-    
+     
 #shadow-desktop {
     position: absolute;
-    width: 35rem;
-    top: 90%;
-    left: 0%;
-   /* transform: translate(-55%, -25%);*/
+    width: 550px;
+    top: 50%;
+    left: -195px;
+    transform: translate(0, -50%);
 }
     
 #faq{
     font-size: 2rem;
     text-align: left;
+}
+.question-block {
+    cursor: pointer;
+}
+.question:hover {
+    color: var(--sr);
 }
 }

@@ -1,101 +1,21 @@
-function arrow1() {
+let qaBlocks = document.querySelectorAll(".qa-block");
 
-    let question = document.getElementById("q1").style;
+qaBlocks.forEach(qaBlock => {
+  let questionBlock = qaBlock;
+  let question = qaBlock.children[0].children[0];
+  let arrow = qaBlock.children[0].children[1].children[0];
+  let answer = qaBlock.children[1];
 
-    let answer = document.getElementById("a1").style;
-
-    let arrow = document.getElementById('arrow-1').style;
-
-    if (answer.display == 'block') {
-        question.fontWeight = 400;
-        answer.display = 'none';
-        arrow.transform  = 'rotate(0deg)';
-          }
-    else {
-        question.fontWeight = 700;
-        answer.display = 'block';
-        arrow.transform  = 'rotate(180deg)';
-          }   
+  questionBlock.addEventListener('click', () => {
+    if (answer.style.display == 'block') {
+      question.style.fontWeight = 400;
+      answer.style.display = 'none';
+      arrow.style.transform  = 'rotate(0deg)';
     }
-      
-function arrow2() {
-
-  let question = document.getElementById("q2").style;
-
-  let answer = document.getElementById("a2").style;
-
-  let arrow = document.getElementById('arrow-2').style;
-
-  if (answer.display == 'block') {
-      question.fontWeight = 400;
-      answer.display = 'none';
-      arrow.transform  = 'rotate(0deg)';
-  }
-  else {
-      question.fontWeight = 700;
-      answer.display = 'block';
-      arrow.transform  = 'rotate(180deg)';
-  }   
-}
-
-function arrow3() {
-
-  let question = document.getElementById("q3").style;
-
-  let answer = document.getElementById("a3").style;
-
-  let arrow = document.getElementById('arrow-3').style;
-
-  if (answer.display == 'block') {
-      question.fontWeight = 400;
-      answer.display = 'none';
-      arrow.transform  = 'rotate(0deg)';
-  }
-  else {
-      question.fontWeight = 700;
-      answer.display = 'block';
-      arrow.transform  = 'rotate(180deg)';
-  }   
-}
-
-function arrow4() {
-
-  let question = document.getElementById("q4").style;
-
-  let answer = document.getElementById("a4").style;
-
-  let arrow = document.getElementById('arrow-4').style;
-
-  if (answer.display == 'block') {
-      question.fontWeight = 400;
-      answer.display = 'none';
-      arrow.transform  = 'rotate(0deg)';
-  }
-  else {
-      question.fontWeight = 700;
-      answer.display = 'block';
-      arrow.transform  = 'rotate(180deg)';
-  }   
-}
-
-function arrow5() {
-
-  let question = document.getElementById("q5").style;
-
-  let answer = document.getElementById("a5").style;
-
-  let arrow = document.getElementById('arrow-5').style;
-
-  if (answer.display == 'block') {
-      question.fontWeight = 400;
-      answer.display = 'none';
-      arrow.transform  = 'rotate(0deg)';
-  }
-  else {
-      question.fontWeight = 700;
-      answer.display = 'block';
-      arrow.transform  = 'rotate(180deg)';
-  }   
-}
-          
-      
+    else {
+      question.style.fontWeight = 700;
+      answer.style.display = 'block';
+      arrow.style.transform  = 'rotate(180deg)';
+    }   
+  });
+});
